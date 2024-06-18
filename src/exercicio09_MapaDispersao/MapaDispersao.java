@@ -47,7 +47,7 @@ public class MapaDispersao<T> {
 
             NoLista<NoMapa<T>> no = info[indice].buscar(noMapa);
             if (no != null) {
-                return no.getInfo().getInfo();
+                return (T) no.getInfo().getInfo();
             }
         }
         return null;
